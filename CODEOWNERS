@@ -1,0 +1,3 @@
+CODEOWNERS @joshjohanning-org/actions-approver-team
+github-actions-allow-list.yml @joshjohanning-org/actions-approver-team
+.github/workflows/actions-allow-list.yml @joshjohanning-org/actions-approver-team
