@@ -10,4 +10,7 @@
 3. Commit changes in a branch
 4. Create a pull request
 5. Someone from the [actions-approver-team](https://github.com/orgs/joshjohanning-org/teams/actions-approver-team) will review
-6. Upon review and a merge of the Pull Request, the changes will be live in a few seconds after the Actions job finishes running
+6. Upon review and a merge of the Pull Request, the changes will be live in a few seconds after the Actions job finishes running 🚀
+
+> **Important**
+> Do not remove the `actionsdesk/github-actions-allow-list-as-code-action@v3.0.0` line otherwise this workflow will fail to run
