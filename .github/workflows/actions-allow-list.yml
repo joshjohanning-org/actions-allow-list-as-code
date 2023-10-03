@@ -20,13 +20,9 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GHEC_ADMIN_TOKEN }}
         run: |
-          gh api -X PUT /orgs/${{ github.repository_owner }}/actions/permissions \
-            -f enabled_repositories='all' \
-            -f allowed_actions='selected'
+          gh api -X PUT /orgs/${{ github.repository_owner }}/actions/permissions -f enabled_repositories='all' -f allowed_actions='selected'
 
-          gh api -X PUT /orgs/${{ github.repository_owner }}/actions/permissions \
-            -F github_owned_allowed=true \
-            -F verified_allowed=true
+          gh api -X PUT /orgs/${{ github.repository_owner }}/actions/permissions -F github_owned_allowed=true -F verified_allowed=true
 
       - name: Deploy GitHub Actions allow list
         uses: ActionsDesk/github-actions-allow-list-as-code-action@v3.0.0
