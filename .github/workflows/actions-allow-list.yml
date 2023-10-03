@@ -1,4 +1,4 @@
-name: 🚀🔐 Deploy GitHub Actions allow list 
+name: 🚀🔐 Deploy Actions allow list 
 
 on:
   push:
