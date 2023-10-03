@@ -6,7 +6,12 @@
 
 1. Open up the [github-actions-allow-list.yml](./github-actions-allow-list.yml)
 2. Add additional action(s), one per line
-    - Can add an entire organization with `azure/*`, any action version `azure/login@*`, or a specific action version `azure/login@v1`
+    - Can add an:
+      - entire organization: `azure/*`
+      - any action version: `azure/login@*`
+      - a specific action version: `azure/login@v1`
+      - a specific commit ref (i.e.: branch): `azure/login@main`
+      - a specific commit full sha: `azure/login@v5906929b67adab884c91d130ce6a7a3a4205a8dd`
 3. Commit changes in a branch
 4. Create a pull request
 5. Someone from the [actions-approver-team](https://github.com/orgs/joshjohanning-org/teams/actions-approver-team) will review
