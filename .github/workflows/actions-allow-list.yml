@@ -1,0 +1,23 @@
+name: 🚀🔐 Deploy GitHub Actions allow list 
+
+on:
+  push:
+    branches: [main]
+    paths: [github-actions-allow-list.yml]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    permissions: read-all
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy GitHub Actions allow list
+        uses: ActionsDesk/github-actions-allow-list-as-code-action@v3.0.0
+        with:
+          token: ${{ secrets.GHEC_ADMIN_TOKEN }}
+          organization: 'joshjohanning-org'
+          allow_list_path: github-actions-allow-list.yml
