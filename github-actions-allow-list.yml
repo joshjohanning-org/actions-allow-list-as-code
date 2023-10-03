@@ -1,0 +1,20 @@
+actions:
+  - actionsdesk/github-actions-allow-list-as-code-action@v3.0.0
+  - azure/*
+  - docker/*
+  - joshjohanning/*
+  - stefanbuck/github-issue-parser@*
+  - ruby/setup-ruby@v1
+  - ossf/scorecard-action@*
+  - lindluni/actions-variable-groups@v2
+  - marocchino/sticky-pull-request-comment@*
+  - tibdex/github-app-token@*
+  - peter-murray/workflow-application-token-action@*
+  - EnricoMi/publish-unit-test-result-action@*
+  - test-summary/action@*
+  - mikepenz/gradle-dependency-submission@*
+  - irongut/CodeCoverageSummary@*
+  - LouisBrunner/checks-action@*
+  - aquasecurity/tfsec-sarif-action@*
+  - benday-inc/download-latest-artifact@*
+  - benc-uk/workflow-dispatch@*
