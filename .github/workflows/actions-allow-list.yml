@@ -4,6 +4,7 @@ on:
   push:
     branches: [main]
     paths: [github-actions-allow-list.yml]
+  workflow_dispatch:
 
 jobs:
   deploy:
