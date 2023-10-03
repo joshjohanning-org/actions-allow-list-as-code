@@ -1,0 +1,1 @@
+# allow-list-as-code
