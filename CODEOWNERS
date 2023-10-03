@@ -1,5 +1,6 @@
 CODEOWNERS @joshjohanning-org/actions-approver-team
 github-actions-allow-list.yml @joshjohanning-org/actions-approver-team
 .github/workflows/actions-allow-list.yml @joshjohanning-org/actions-approver-team
+.github/dependabot.yml @joshjohanning-org/actions-approver-team
 README.md @joshjohanning-org/actions-approver-team
 LICENSE @joshjohanning-org/actions-approver-team
