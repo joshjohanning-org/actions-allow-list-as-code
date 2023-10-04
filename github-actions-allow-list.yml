@@ -10,12 +10,12 @@ actions:
   - marocchino/sticky-pull-request-comment@*
   - tibdex/github-app-token@*
   - peter-murray/workflow-application-token-action@*
-  - EnricoMi/publish-unit-test-result-action@*
+  - enricoMi/publish-unit-test-result-action@*
   - test-summary/action@*
   - mikepenz/gradle-dependency-submission@*
   - irongut/CodeCoverageSummary@*
-  - LouisBrunner/checks-action@*
+  - louisBrunner/checks-action@*
   - aquasecurity/tfsec-sarif-action@*
   - benday-inc/download-latest-artifact@*
   - benc-uk/workflow-dispatch@*
-  - SonarSource/*
+  - sonarSource/*
