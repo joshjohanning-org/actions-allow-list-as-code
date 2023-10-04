@@ -19,3 +19,5 @@ actions:
   - benday-inc/download-latest-artifact@*
   - benc-uk/workflow-dispatch@*
   - sonarSource/*
+  - 5monkeys/cobertura-action@*
+  
