@@ -20,4 +20,5 @@ actions:
   - benc-uk/workflow-dispatch@*
   - sonarSource/*
   - 5monkeys/cobertura-action@*
+  - super-linter/super-linter@*
   
