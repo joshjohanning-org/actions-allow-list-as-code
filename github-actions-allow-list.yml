@@ -25,3 +25,4 @@ actions:
   - mickeygoussetorg/get-a-dad-joke@*
   - peter-evans/create-or-update-comment@*
   - dorny/test-reporter@*
+  - cschleiden/replace-tokens@*
