@@ -1,8 +1,8 @@
 actions:
-  - actionsdesk/github-actions-allow-list-as-code-action@v3.0.0
+  - actionsdesk/github-actions-allow-list-as-code-action@v*
+  - joshjohanning/*
   - azure/*
   - docker/*
-  - joshjohanning/*
   - stefanbuck/github-issue-parser@*
   - ruby/setup-ruby@v1
   - ossf/scorecard-action@*
