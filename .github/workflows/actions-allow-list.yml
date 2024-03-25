@@ -24,7 +24,9 @@ jobs:
           app-id: ${{ vars.APP_ID }}
           private-key: ${{ secrets.PRIVATE_KEY }}
           owner: ${{ github.repository_owner }}
-          
+
+      # if using Enterprise, use the `/enterprises/<enterprise-slug>` endpoint
+      # and PAT - can't use GitHub app at Enterprise at Enterprise level
       - name: Enable Actions Policy in Org
         env:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
