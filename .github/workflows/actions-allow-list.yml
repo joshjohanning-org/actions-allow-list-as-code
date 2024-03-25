@@ -3,7 +3,9 @@ name: 🚀🔐 Deploy Actions allow list
 on:
   push:
     branches: [main]
-    paths: [github-actions-allow-list.yml]
+    paths:
+      - github-actions-allow-list.yml
+      - .github/workflows/actions-allow-list.yml
   workflow_dispatch:
 
 jobs:
