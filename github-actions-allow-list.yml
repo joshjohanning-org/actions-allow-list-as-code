@@ -27,4 +27,3 @@ actions:
   - dorny/test-reporter@*
   - cschleiden/replace-tokens@*
   - DeveloperMetrics/deployment-frequency@main
-  - mxschmitt/action-tmate@*
