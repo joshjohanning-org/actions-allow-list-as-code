@@ -28,3 +28,4 @@ actions:
   - cschleiden/replace-tokens@*
   - DeveloperMetrics/deployment-frequency@main
   - mxschmitt/action-tmate@*
+  - hashicorp/*
