@@ -29,3 +29,4 @@ actions:
   - DeveloperMetrics/deployment-frequency@main
   - mxschmitt/action-tmate@*
   - hashicorp/*
+  - antifree/json-to-variables@*
