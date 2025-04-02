@@ -30,3 +30,5 @@ actions:
   - mxschmitt/action-tmate@*
   - hashicorp/*
   - antifree/json-to-variables@*
+  - issue-ops/*
+  
