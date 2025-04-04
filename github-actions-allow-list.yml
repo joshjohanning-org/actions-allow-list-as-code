@@ -1,5 +1,5 @@
 actions:
-  - actionsdesk/github-actions-allow-list-as-code-action@v*
+  - actionsdesk/github-actions-allow-list-as-code-action@*
   - joshjohanning/*
   - azure/*
   - docker/*
