@@ -31,4 +31,3 @@ actions:
   - hashicorp/*
   - antifree/json-to-variables@*
   - issue-ops/*
-  
