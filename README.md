@@ -18,4 +18,4 @@
 6. Upon review and a merge of the Pull Request, the changes will be live in a few seconds after the Actions job finishes running 🚀
 
 > [!IMPORTANT]
-> Do not remove the `actionsdesk/github-actions-allow-list-as-code-action@v3.0.0` line otherwise this workflow will fail to run
+> Do not remove the `actionsdesk/github-actions-allow-list-as-code-action@*` line otherwise this workflow will fail to initialize (because this Action is blocked) and you will have to manually add it back in.
