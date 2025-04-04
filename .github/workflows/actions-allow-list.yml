@@ -6,10 +6,12 @@ on:
     paths:
       - github-actions-allow-list.yml
       - .github/workflows/actions-allow-list.yml
+  pull_request:
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
-  deploy:
+  run:
     runs-on: ubuntu-latest
 
     permissions: read-all
@@ -25,9 +27,19 @@ jobs:
           private-key: ${{ secrets.PRIVATE_KEY }}
           owner: ${{ github.repository_owner }}
 
+      - name: validate yml
+        run: |
+          if yq eval github-actions-allow-list.yml; then
+            echo "Actions YML is valid"
+          else
+            echo "Actions YML validation failed"
+            exit 1
+          fi
+
       # if using Enterprise, use the `/enterprises/<enterprise-slug>` endpoint
       # and PAT - can't use GitHub app at Enterprise at Enterprise level
       - name: Enable Actions Policy in Org
+        if: github.event_name != 'pull_request'
         env:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
         run: |
@@ -40,6 +52,7 @@ jobs:
             -F verified_allowed=true
 
       - name: Deploy GitHub Actions allow list
+        if: github.event_name != 'pull_request'
         uses: ActionsDesk/github-actions-allow-list-as-code-action@v3.1.0
         with:
           token: ${{ steps.app-token.outputs.token }}
