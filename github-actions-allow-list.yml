@@ -6,7 +6,7 @@ actions:
   - stefanbuck/github-issue-parser@*
   - ruby/setup-ruby@v1
   - ossf/scorecard-action@*
-  - lindluni/actions-variable-groups@v2
+  - lindluni/actions-variable-groups@v2*
   - marocchino/sticky-pull-request-comment@*
   - tibdex/github-app-token@*
   - peter-murray/workflow-application-token-action@*
