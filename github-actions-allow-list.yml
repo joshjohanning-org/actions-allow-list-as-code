@@ -1,6 +1,6 @@
 actions:
-  - actionsdesk/github-actions-allow-list-as-code-action@*
-  - joshjohanning/*
+  - actionsdesk/github-actions-allow-list-as-code-action@* # need to make sure to allow this one
+  - joshjohanning/* # all of my actions
   - azure/*
   - docker/*
   - stefanbuck/github-issue-parser@*
