@@ -39,6 +39,7 @@ jobs:
 
       # if using Enterprise, use the `/enterprises/<enterprise-slug>` endpoint
       # and PAT - can't use GitHub app at Enterprise at Enterprise level
+      # setting this in case someone changed the settings in the UI manually
       - name: Enable Actions Policy in Org
         if: github.event_name != 'pull_request'
         env:
