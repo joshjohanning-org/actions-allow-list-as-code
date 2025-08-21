@@ -43,7 +43,7 @@ jobs:
       - name: Enable Actions Policy in Org
         if: github.event_name != 'pull_request'
         env:
-          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          GH_TOKEN: ${{ steps.app-token.outputs.token }} # replace this if using PAT
         run: |
           gh api -X PUT /orgs/${{ github.repository_owner }}/actions/permissions \
             -f enabled_repositories='all' \
@@ -57,6 +57,6 @@ jobs:
         if: github.event_name != 'pull_request'
         uses: ActionsDesk/github-actions-allow-list-as-code-action@013d3b0b014f3a7656c5b0a28c00fe8c7e41b5e3 # v3.1.0
         with:
-          token: ${{ steps.app-token.outputs.token }}
+          token: ${{ steps.app-token.outputs.token }} # replace this if using PAT
           organization: ${{ github.repository_owner }}
           allow_list_path: github-actions-allow-list.yml
