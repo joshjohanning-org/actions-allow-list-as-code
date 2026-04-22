@@ -34,7 +34,7 @@ jobs:
         id: app-token
         with:
           client-id: ${{ vars.APP_CLIENT_ID }}
-          private-key: ${{ secrets.PRIVATE_KEY }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
           owner: ${{ github.repository_owner }}
 
       # if using Enterprise, use the `/enterprises/<enterprise-slug>` endpoint
