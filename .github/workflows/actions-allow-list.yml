@@ -55,7 +55,7 @@ jobs:
 
       - name: Deploy GitHub Actions allow list
         if: github.event_name != 'pull_request'
-        uses: ActionsDesk/github-actions-allow-list-as-code-action@8a468ce76d277de9dac7c49934e29acfa6fd4a13 # v3.2.2
+        uses: ActionsDesk/github-actions-allow-list-as-code-action@6cee5fee0458b0e8e03d717f96b012b7464d6396 # v3.3.0
         with:
           token: ${{ steps.app-token.outputs.token }} # replace this if using PAT
           organization: ${{ github.repository_owner }}
