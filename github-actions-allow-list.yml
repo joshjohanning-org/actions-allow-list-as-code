@@ -31,3 +31,4 @@ actions:
   - hashicorp/*
   - antifree/json-to-variables@*
   - issue-ops/*
+  - aws-actions/configure-aws-credentials
